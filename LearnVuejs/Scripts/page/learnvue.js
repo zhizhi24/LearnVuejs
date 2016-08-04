@@ -149,3 +149,20 @@ new Vue({
         }
     }
 })
+
+
+//1-11
+//Class对象语法 Binding HTML Classes - Object Syntax
+//可以传给 v-bind:class 一个对象，以动态地切换class。注意 v-bind:class 指令可以与普通的 class 特性共存。
+
+
+var data = {
+    isA: true,
+    isB: true
+}
+
+new Vue({
+    el: '#learnvue1-11',
+    data: data
+
+})
