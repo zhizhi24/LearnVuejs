@@ -95,3 +95,18 @@ new Vue({
     el: '#learnvue1-7',
     data: data
 })
+
+
+
+//1-8
+//过滤器
+//Vue.js 允许在表达式后添加可选的“过滤器 (Filter) ”，以“管道符(|)”指示。过滤器本质上是一个函数，这个函数会接收一个值，将其处理并返回。
+//这里我们将表达式 message 的值“管输（pipe）”到内置的 uppercase 过滤器，这个过滤器其实只是一个 JavaScript 函数，返回大写化的值。
+var data = {
+    message: "heLLO Vue.js!"
+}
+
+new Vue({
+    el: '#learnvue1-8',
+    data: data
+})
