@@ -128,3 +128,24 @@ new Vue({
     el: '#learnvue1-9',
     data: data
 })
+
+
+
+//1-10
+//计算属性 Computed Properties
+//在模板中表达式非常便利，但是它们实际上只用于简单的操作。模板是为了描述视图的结构。
+//在模板中放入太多的逻辑会让模板过重且难以维护。这就是为什么 Vue.js 将绑定表达式限制为一个表达式。如果需要多于一个表达式的逻辑，应当使用计算属性。
+
+new Vue({
+    el: '#learnvue1-10',
+    data: {
+        a: 1
+    },
+    //在 Vue.js 中，可以通过 computed 选项定义计算属性：
+    computed: {
+        b: function () {
+            // `this` 指向 Vue实例
+            return this.a +1
+        }
+    }
+})
