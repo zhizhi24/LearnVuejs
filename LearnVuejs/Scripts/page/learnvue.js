@@ -53,3 +53,15 @@ new Vue({
 })
 
 data.msg = "yeeee~"
+
+
+//1-5
+//原始的HTML
+var data = {
+    msg: '<h1>Hello Vue.js! 输出HTML字符串，非纯文本~~ </h1>'
+}
+
+new Vue({
+    el: '#learnvue1-5',
+    data: data
+})
