@@ -1,10 +1,12 @@
-﻿new Vue({
-    el: '#demo',
+﻿//1-1
+new Vue({
+    el: '#learnvue1-1',
     data: {
         message: 'hello word~'
     }
 })
 
+//1-2
 //构造器
 //每个Vue.js应用的起步都是通过构造函数Vue创建一个Vue的根实例：
 var vm = new Vue({
@@ -13,7 +15,7 @@ var vm = new Vue({
 //一个Vue实例其实正是一个MVVM模式中所描述的 ViewModel - 因此在文档中经常会使用vm这个变量名。
 
 
-
+//1-3
 //属性与方法
 var data = {
     name: "yeeee"
@@ -36,3 +38,18 @@ vm.$el === document.getElementById('example');
 vm.$watch('a', function (newVal, oldVal) {
     // 这个回调将在 `vm.a`  改变后调用
 })
+
+
+//1-4
+//插值
+//数据绑定最基础的形式是文本插值，使用 {{}} 语法（双大括号）
+var data = {
+    msg: 'Hello Vue.js!'
+}
+
+new Vue({
+    el: '#learnvue1-4',
+    data: data
+})
+
+data.msg = "yeeee~"

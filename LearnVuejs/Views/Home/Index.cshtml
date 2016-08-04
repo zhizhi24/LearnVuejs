@@ -1,9 +1,20 @@
-﻿<div id="demo">
+﻿<div id="learnvue1-1">
     {{ message }}
 </div>
 
 <div id="exapmle">
    
+</div>
+
+<div id="learnvue1-4">
+    {{ msg }} 标签会被相应数据对象的 msg 属性的值替换。每当这个属性变化时它也会更新。
+    <p> message: {{ msg }} </p>
+
+    <br />
+    <br />
+
+    也可以只处理单次插值，今后的数据变化就不会再引起插值更新了：
+    <p> message: {{* msg }} </p>
 </div>
 
 <script src="~/Scripts/page/learnvue.js"></script>
