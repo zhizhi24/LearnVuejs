@@ -65,3 +65,33 @@ new Vue({
     el: '#learnvue1-5',
     data: data
 })
+
+
+//1-6
+//HTML特性
+//双大括号标签也可以用在 HTML 特性 (Attributes) 
+
+var data = {
+    class: 'learnvue1-6',
+    msg: 'ya~~'
+}
+
+new Vue({
+    el: 'div',
+    data: data
+})
+
+
+//1-7
+//JavaScript表达式
+
+var data = {
+    number: 1,
+    ok: true,
+    message: "Hello Vue.js!"
+}
+
+new Vue({
+    el: '#learnvue1-7',
+    data: data
+})
