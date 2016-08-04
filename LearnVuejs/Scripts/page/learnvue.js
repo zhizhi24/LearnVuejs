@@ -110,3 +110,21 @@ new Vue({
     el: '#learnvue1-8',
     data: data
 })
+
+
+
+//1-9
+//指令
+//Vue.js指令 (Directives) 是特殊的带有前缀 v- 的特性。
+//本质是模板中出现的特殊标记，让处理模板的库知道需要对这里的DOM元素进行一些对应的处理。
+//指令的职责就是当其表达式的值改变时把某些特殊的行为应用到 DOM 上。
+//在Vue.js中为我们提供了一些指令：v-text，v-html，v-model，v-on，v-else等等
+var data = {
+    msgtrue: 1,
+    msgfalse: false
+}
+
+new Vue({
+    el: '#learnvue1-9',
+    data: data
+})
